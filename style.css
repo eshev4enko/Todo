@@ -1,0 +1,272 @@
+/* -------------------------------------------------------------------- */
+/* ------------------------------ default ----------------------------- */
+/* -------------------------------------------------------------------- */
+html, body {
+    height: 100%;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #1d1d1b;
+    font: 400 16px / 1.5 'Open Sans', sans-serif;
+    min-width: 320px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #42474d;
+    text-decoration:none;
+}
+
+a:hover {
+    color:#42474d;
+}
+
+a:focus {
+    color:#42474d;
+    outline:0;
+}
+
+a:hover,
+a:active {
+    outline:0;
+}
+
+input:focus {
+    outline:0;
+    border:1px solid #04A4CC;
+}
+
+ul, ol {
+    padding: 0;
+    margin: 0;
+}
+
+li {
+    list-style: none;
+}
+
+input:focus {
+    outline: none;
+    border: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------------ fonts ------------------------------- */
+/* -------------------------------------------------------------------- */
+
+@font-face {
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+    font-family: 'Open Sans';
+    src: url('./fonts/OpenSans-Regular.ttf') format('truetype');
+}
+
+/* -------------------------------------------------------------------- */
+/* ------------------------ list main styles -------------------------- */
+/* -------------------------------------------------------------------- */
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.todo-list-inner-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.todo-list-inner-box.clean-add-list {
+    display: none;
+}
+
+.todo-list-inner-box.clean-add-list.new-todo-list {
+    display: flex;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
+    background-color: #6495ed;
+    padding: 15px 20px;
+}
+
+.header-title .list-title {
+    color: #fff;
+    font-size: 18px;
+    width: calc(100% - 100px);
+    border: none;
+    border-bottom: 1px solid #333;
+    background-color: transparent;
+    outline: none;
+    color: #333;
+}
+
+.header-title .list-title::placeholder {
+    color: #333;
+}
+
+.header-list-edit {
+    margin-left: auto;
+}
+
+.header-list-edit .fa-pencil,
+.header-list-edit .fa-trash,
+.header-title .fa-calendar {
+    color: #333;
+    font-size: 19px;
+}
+
+.header-title .fa-calendar,
+.header-list-edit .fa-pencil {
+    padding-right: 10px;
+}
+
+.header-list-edit .fa-trash {
+    border-left: 1px solid #333;
+    padding-left: 10px;
+}
+
+.enter-data-list {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    background-color: #eae7e7;
+}
+
+.enter-data-list .fa-plus {
+    color: green;
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.input-list-data {
+    border: 1px solid #ccc;
+    background-color: #fff;
+    width: 100%;
+    position: relative;
+    border-radius: 3px;
+    text-align: left;
+}
+
+.input-list-data button {
+    background-color: green;
+    color: #fff;
+    border: 1px solid green;
+    padding: 5px 20px;
+    position: absolute;
+    right: 0;
+}
+
+.input-list-data input {
+    border: none;
+    background-color: transparent;
+    padding: 5px 10px;
+    width: calc(100% - 95px);
+}
+
+.body-list-data .list-sections {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border-top: 0;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.list-check-wrap {
+    display: inline-block;
+    border-right: 4px double #ccc;
+    padding: 15px 15px 15px 0;
+}
+
+.list-check-txt {
+    display: inline-block;
+    margin-left: 15px;
+    width: 70%;
+    padding: 10px;
+    border: none;
+    background-color: transparent;
+}
+
+.list-check-txt.redact {
+    background-color: #fff;
+}
+
+.list-check-txt.done {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+
+.list-sections .list-add-data {
+    background-color: #fff;
+    transition: all 0.5s;
+    padding: 0 15px;
+    position: relative;
+}
+
+.list-sections .list-add-data:hover {
+    cursor: pointer;
+    background-color: rgba(191,175, 56, 0.3);
+    transition: all 0.5s;
+}
+
+.change-data-checker {
+    display: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 45px;
+}
+
+.change-data-checker div {
+    display: inline-block;
+}
+
+.change-data-checker-inner {
+    margin-right: 10px;
+    padding-right: 10px;
+    border-right: 1px solid #333;
+}
+
+.change-data-checker-inner:last-child {
+    border-right: none;
+    margin-right: 0;
+    padding-right: 0;
+}
+
+.add-todo-list {
+    background-color: #6495ed;
+    color: #fff;
+    border: 1px solid #6495ed;
+    border-radius: 3px;
+    padding: 10px 30px;
+    margin-top: 50px;
+    opacity: 1;
+    transition: opacity 0.5s;
+}
+
+.add-todo-list:hover {
+    cursor: pointer;
+    opacity: 0.8;
+    transition: opacity 0.5s;
+}
