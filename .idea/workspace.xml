@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2ca4410d-b639-42cb-9ffe-ac9e39300536" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,6 +22,7 @@
   <component name="ProjectId" id="1SSYPhdXK8YbhLj4nSutXBR99Lp" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
@@ -57,7 +59,7 @@
       <workItem from="1571770022633" duration="2536000" />
       <workItem from="1571772782142" duration="846000" />
       <workItem from="1571858217607" duration="988000" />
-      <workItem from="1574499891641" duration="378000" />
+      <workItem from="1574499891641" duration="788000" />
     </task>
     <servers />
   </component>
