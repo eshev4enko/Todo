@@ -9,7 +9,7 @@ $(function() {
 
 function sendAjaxForm(result_form, ajax_form, url) {
     $.ajax({
-        url:     url,
+        url:      url,
         type:     "POST",
         dataType: "html",
         data: $("#"+ajax_form).serialize(),
